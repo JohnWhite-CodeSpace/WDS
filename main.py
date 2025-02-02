@@ -47,10 +47,10 @@ def split_dataset(x, y, test_size=0.3, random_state=40, stratify=None):
     return x_train, y_train, x_test, y_test
 
 
-def balance_dataset(x_train, y_train):
-    smote = SMOTE(random_state=42)
-    x_train_balanced, y_train_balanced = smote.fit_resample(x_train, y_train)
-    return x_train_balanced, y_train_balanced
+# def balance_dataset(x_train, y_train):
+#     smote = SMOTE(random_state=42)
+#     x_train_balanced, y_train_balanced = smote.fit_resample(x_train, y_train)
+#     return x_train_balanced, y_train_balanced
 
 
 def perform_LDA(x_train, y_train, x_test, y_test):
